@@ -36,30 +36,38 @@
     		    </h2>
     	    </div>
 
-    	    <form id="form" action="">
-    		    <input class="register" type="text" name="firstname" placeholder=" Firstname" required>
-    		    <input class="register" type="text" name="lastname" placeholder=" Lastname" required>
-    		    <input type="text" name="Username" placeholder=" Username" required>
-    		    <input class="register" type="email" name="email" placeholder=" Email addrress" required>
-    		    <input type="password" name="password" placeholder=" Password" required>
+            <div id="form-container">
+                
+                <form id="log-in">
+                    <input type="text" name="Username" placeholder=" Username" required>
+                    <input type="password" name="password" placeholder=" Password" required>
 
-    		    <input id="login" class="initial" type="Submit" value="Login">
+                    <input id="login" type="Submit" value="Login">
 
-    		     <div class="initial alert">
-    		    	<p class="para">Don't have an account?</p>
-    		    	<button type="button" onclick="showRegister()" value="signup">Sign up</button>
-    		    </div>
+                    <div id="login-alert">
+                        <p>Don't have an account?</p>
+                        <button type="button" onclick="showRegister()" value="signup">Sign up</button>
+                    </div>
+                </form>
 
-    		    <input id="reg" class="register" type="Submit" value="Sign up">
+                <form id="register">
+                    <input type="text" name="firstname" placeholder=" Firstname" required>
+                    <input type="text" name="lastname" placeholder=" Lastname" required>
+                    <input type="text" name="Username" placeholder=" Username" required>
+                    <input type="email" name="email" placeholder=" Email addrress" required>
+                    <input type="password" name="password" placeholder=" Password" required>
 
-    		    <div class="register alert">
-    		    	<p class="para">Have an account?</p>
-    		    	<button type="button" onclick="hideRegister()" value="login">Login</button>
-    		    </div>
+                    <input id="reg" type="Submit" value="Sign up">
 
-    	    </form>
+                    <div id="register-alert">
+                        <p>Have an account?</p>
+                        <button type="button" onclick="hideRegister()" value="login">Login</button>
+                    </div>
+                </form>
+
+            </div>
+
         </div>
-
         <script type="text/javascript" src="codeheist.js"></script>
     </body>
 </html>

@@ -10,40 +10,24 @@ const animate = () => {
 }
 
 const showRegister = () => {
-	const registerInfo = document.querySelectorAll(".register");
-	const hideLogin = document.querySelectorAll(".initial");
-	const formDiv = document.querySelector("#form");
+	const showRegister = document.querySelector("#register");
+	const hideLogin = document.querySelector("#log-in");
 
-	registerInfo.forEach(function(register) {
-		if(!register.style.display) {
-			register.style.display = "block";
-		} 
-	})
+	showRegister.style.display = "block";
+	showRegister.style.height = "450px"
 
-	hideLogin.forEach(function(hide) {
-		hide.style.display = "none";
-	})
-
-	formDiv.style.height = "450px";
+	hideLogin.style.display = "none";
 
 }
 
 const hideRegister = () => {
-	const removeRegister = document.querySelectorAll(".register");
-	const showLogin = document.querySelectorAll(".initial");
-	const formDiv = document.querySelector("#form");
+	const hideRegister = document.querySelector("#register");
+	const showLogin = document.querySelector("#log-in");
 
-	removeRegister.forEach(function(register) {
-		if(register.style.display) {
-			register.style.display = "";		
-	    }
-    })
+	hideRegister.style.display = "";
+	hideRegister.style.height = "400px";
 
-    showLogin.forEach(function(hide) {
-    	hide.style.display = "inline";
-    })
-
-    formDiv.style.height = "400px";
+    showLogin.style.display = "block";
     
 }
 
