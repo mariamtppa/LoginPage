@@ -114,6 +114,15 @@ input {
 	opacity: 0;
 }
 
+#login:hover, #reg:hover {
+	color: rgba(168, 8, 116, 0.8);
+	background-color: #ffffff;
+}
+
+.alert button:hover {
+	color: rgba(168, 8, 116, 0.5);;
+}
+
 @media screen and (max-width: 900px) {
 	#container {
 		flex-direction: column;
