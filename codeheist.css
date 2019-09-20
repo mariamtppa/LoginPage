@@ -134,7 +134,7 @@ input {
 	background-color: #ffffff;
 }
 
-.alert button:hover {
+#login-alert button:hover, #register-alert button:hover {
 	color: rgba(168, 8, 116, 0.5);;
 }
 
