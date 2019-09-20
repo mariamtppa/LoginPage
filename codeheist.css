@@ -139,6 +139,7 @@ input {
 }
 
 @media screen and (max-width: 900px) {
+
 	#container {
 		flex-direction: column;
 		width: 80%;
@@ -148,12 +149,15 @@ input {
 	#logo {
 		width: 400px;
 		height: 70px;
-		margin: 0 0 30px 10px;
+		margin: 0 0 30px 0px;
 		border-radius: 30px;
 		line-height: normal;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	#form-container {
+		margin-left: 0;
 	}
 
 	#logo h1 {
@@ -163,11 +167,6 @@ input {
 	#logo h2 { 
 		display: none;
 
-	}
-
-	#form {
-		padding: 20px 0;
-		height: 400px;
 	}
 }
 
